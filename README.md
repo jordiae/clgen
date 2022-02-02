@@ -1,11 +1,11 @@
 Fork of https://github.com/fivosts/clgen. While the original software has many features, I just use it to dump C Github code from BigQuery into an SQLite database. With respect to the original code to get Github C repos, I modified it to also include header files (.h) and keep the repo stars as a field. Steps:
 
-1 - Clone this repo.
-2 - Run requirements.apt to install system dependencies (basically, we need an up-to-date version of CMake, Protobuf, etc).
-3 - Install Python requirements (requirements.txt).
-4 - Build: mkdir build && cd build && cmake .. && make
-4 - Get BigQuery credentials. The path to the credentials JSON is specified here: https://github.com/jordiae/clgen/blob/master/model_zoo/github/bq_C_db.pbtxt#L5
-5 - Run: ./clgen --config model_zoo/github/bq_C_db.pbtxt
+1. Clone this repo.
+2. Run requirements.apt to install system dependencies (basically, we need an up-to-date version of CMake, Protobuf, etc).
+3. Install Python requirements (requirements.txt).
+4. Build: mkdir build && cd build && cmake .. && make
+4. Get BigQuery credentials. The path to the credentials JSON is specified here: https://github.com/jordiae/clgen/blob/master/model_zoo/github/bq_C_db.pbtxt#L5
+5. Run: ./clgen --config model_zoo/github/bq_C_db.pbtxt
 
 (Original README below)
 
